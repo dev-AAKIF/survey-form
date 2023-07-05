@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration form</title>
+</head>
+<body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+         </header>
+        <br>
+        <br>
+      <br>
+        <p id="description" class="description text-center">
+         Give your Opinion about the College's Canteen
+          </p>
+      </header> 
+      <p id="description">
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="enrollment number-label" for="enrollment number">Enrollment No.</label>
+          <input
+            type="number"
+            name="enrollment number"
+            id="enrollment number"
+            class="form-control"
+            placeholder="Enter your Enrollment No."
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which of the below rating best describes the college canteen?</p>
+          <select id="dropdown" name="rating" class="form-control" required>
+            <option disabled selected value>Select the rating which best describes the condition of college's canteen</option>
+            <option value="excellent">Excellent</option>
+            <option   value="great">Great</option>
+             <option value="average">Average</option>
+             <option value="under average">Under Average</option>
+             <option value="worst ">Worst</option>
+            <option value="prefer not to say">Prefer Not to Say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>
+             What is your favorite Area of College's Canteen?
+          </p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="eating area">Eating Area</option>
+            <option value="queue area">Queue Area</option>
+            <option value="handwashing area">HandWashing & Drinking Area</option>
+            <option value="bathroom">Bathroom Area</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+    
+          <label
+            ><input
+              name="prefer"
+              value="cleanliness"
+              type="checkbox"
+              class="input-checkbox"
+            />Cleanliness</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="maintenance"
+              type="checkbox"
+              class="input-checkbox"
+            />Maintenance</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="lighting and electricity Segment"
+              type="checkbox"
+              class="input-checkbox"
+            />Lighting & Electricity Segment</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="food quality"
+              type="checkbox"
+              class="input-checkbox"
+            />Food Quality</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="food makers cleanliness"
+              type="checkbox"
+              class="input-checkbox"
+            />Food Makers Cleanliness</label
+          >
+        </br>
+        </br>
+          <label>Does this Survey Helps You:</label>
+    <label>
+      <input type="radio" name="question" id= "happy"
+             value="happy">Yes
+    </label>
+    <label>
+      <input type="radio" name="question" id="Sad"
+             value="sad">No
+    </label>
+        </br>
+        </br>
+        </div>
+    
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+    
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    </body>
+</html>
