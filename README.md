@@ -1,3 +1,3 @@
 # survey-form
 
-Link :- https://dev-aakif.github.io/survey-form/
+Link :- https://dev-akif-survey-form.vercel.app/
